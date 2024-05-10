@@ -24,11 +24,12 @@ Expense Tracker is an Android application designed to help users manage their ex
 
 ## Screenshots
 
-[Add screenshots here to visually represent the app.]
+![Signup and Login](screenshots/LoginAndSingup.png)
+![Expense Management](screenshots/ManageExpenses.png)
 
 ## Data Flow Documentation
 
-[Add documentation here to explain how data flows through the app.]
+![Data Flow Diagram](screenshots/datafolowDiagram.png)
 
 ## References
 
