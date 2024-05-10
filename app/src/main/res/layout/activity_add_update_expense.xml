@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUpdateExpenseActivity">
+
+    <LinearLayout
+        android:id="@+id/expensetype"
+        android:layout_width="293dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="576dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="146.5dp"
+            android:layout_height="match_parent"
+            android:text="Income"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/expense"
+            android:layout_width="146.5dp"
+            android:layout_height="match_parent"
+            android:text="Expense"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/expensetitle"
+        android:layout_width="293dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expensetype"
+        android:hint="Add Expense Title"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="293dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="59dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expensetitle">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="$"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/amt"
+            android:layout_width="223dp"
+            android:layout_height="match_parent"
+            android:hint="0"
+            android:textSize="45dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="293dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="105dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="63dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:backgroundTint="@color/red"/>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="Done"
+            android:backgroundTint="@color/red"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

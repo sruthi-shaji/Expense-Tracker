@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/profileName"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Full Name"/>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Enter User Name"/>
+
+            <EditText
+                android:id="@+id/passWord"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Enter password"
+                android:inputType="textPassword"/>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="SignUp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:backgroundTint="@color/red"/>
+
+                <Button
+                    android:id="@+id/gotologin"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:backgroundTint="@color/red"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
